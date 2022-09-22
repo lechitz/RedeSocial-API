@@ -13,7 +13,7 @@ var (
 	StringConexaoBanco = ""
 
 	//Porta onde a API vai estar rodando
-	Porta = 0
+	Porta = 5000
 )
 
 //Carregar vai inicializar as variáveis de ambiente
@@ -29,7 +29,7 @@ func Carregar() {
 		Porta = 9000
 	}
 
-	fmt.Println(Porta)
+	fmt.Printf("Escutando na Porta: %d\n", Porta)
 
 	StringConexaoBanco = fmt.Sprintf("%s:%s@/%s?charset=utf8&parseTime=True&loc=Local",
 		os.Getenv("DB_USUARIO"),

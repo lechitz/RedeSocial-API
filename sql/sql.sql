@@ -1,7 +1,5 @@
-CREATE
-DATABASE IF NOT EXISTS devbook;
-USE
-devbook;
+CREATE DATABASE IF NOT EXISTS devbook;
+USE devbook;
 
 DROP TABLE IF EXISTS usuarios;
 
