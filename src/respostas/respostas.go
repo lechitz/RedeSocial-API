@@ -8,6 +8,7 @@ import (
 
 //JSON retorna uma resposta para a requisição. Essa função tem 3 parâmetros: http.ResponseWrite que escreve as respostas na saída, statusCode, dados de interface
 func JSON(w http.ResponseWriter, statusCode int, dados interface{}) {
+	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(statusCode)
 
 	if erro := json.NewEncoder(w).Encode(dados); erro != nil {
