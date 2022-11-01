@@ -7,3 +7,8 @@ insert into seguidores(usuario_id, seguidor_id)
 values (1, 2), -- Usuário1 é SEGUIDO pelo Usuário2
        (3, 1),
        (1, 3);
+
+insert into publicacoes(titulo, conteudo, autor_id)
+values ("Publicação usuário 1", "Essa é a publicação do usuário 1", 1),
+       ("Publicação usuário 2", "Essa é a publicação do usuário 2", 2),
+       ("Publicação usuário 3", "Essa é a publicação do usuário 3", 3);
